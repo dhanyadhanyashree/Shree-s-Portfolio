@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TasteBud Travels — Culinary Expeditions & Food Travel Portfolio by Dhanyashree</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="TasteBud Travels is a curated culinary travel portfolio by Dhanyashree. Explore secret street food alleys, ancestral mole hearths, Michelin journeys, and authentic global recipes.">
+  <meta name="keywords" content="food travel, culinary portfolio, travel photography, foodie guides, world recipes, street food, Dhanyashree portfolio">
+  <meta name="author" content="Dhanyashree">
+
+  <!-- OpenGraph / Social Sharing -->
+  <meta property="og:title" content="TasteBud Travels — Wander the Globe, One Flavor at a Time">
+  <meta property="og:description" content="Join culinary explorer Dhanyashree across 34+ countries uncovering authentic recipes, secret food markets, and cultural tasting trails.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Font Awesome 6 Icons & Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       Header & Glassmorphic Navigation
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo">
+        <div class="logo-badge">
+          <i class="fa-solid fa-pepper-hot"></i>
+        </div>
+        <span>TasteBud <span class="highlight">Travels</span></span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#destinations" class="nav-link">Expeditions</a></li>
+          <li><a href="#world-map" class="nav-link">Food Map</a></li>
+          <li><a href="#recipe-vault" class="nav-link">Recipe Vault</a></li>
+          <li><a href="#journal" class="nav-link">Taste Journal</a></li>
+          <li><a href="#quiz" class="nav-link">Flavor Quiz</a></li>
+          <li><a href="#about" class="nav-link">About Dhanyashree</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Action Items -->
+      <div class="nav-actions">
+        <!-- Ambient Sound Toggle -->
+        <button id="ambientAudioBtn" class="audio-vibe-btn" title="Toggle Chill Travel Ambient Sounds">
+          <div class="sound-waves">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <span id="audioBtnText">Taste Vibe</span>
+        </button>
+
+        <a href="#contact" class="btn btn-primary btn-pill">
+          <span>Plan Tasting Tour</span>
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       Hero Section
+       ======================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-subhead">
+            <i class="fa-solid fa-compass-drafting compass-icon"></i>
+            <span>Curated Culinary Travel Portfolio & Food Journalism</span>
+          </div>
+          
+          <h1 class="hero-title">
+            Wander the Globe, One <em>Flavor</em> at a Time.
+          </h1>
+
+          <p class="hero-description">
+            Step beyond typical tourist trails. Discover slow-simmered ancestral moles, midnight Tokyo ramen counters, sun-drenched Amalfi lemons, and the authentic stories of humanity told through what we eat. Curated by Dhanyashree.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#destinations" class="btn btn-primary">
+              <span>Explore Expeditions</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#quiz" class="btn btn-outline">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+              <span>Take Flavor Quiz</span>
+            </a>
+          </div>
+
+          <!-- Hero Live Stats -->
+          <div class="hero-stats-row">
+            <div class="stat-item">
+              <div class="stat-number">34+</div>
+              <div class="stat-label">Countries Explored</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">420+</div>
+              <div class="stat-label">Dishes Documented</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">85</div>
+              <div class="stat-label">Secret Recipes</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Authentic Local</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Stack with Floating Glass Card -->
+        <div class="hero-visual-card">
+          <div class="hero-image-stack">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1000&q=80" alt="Fresh artisan pasta and culinary travel in Italy">
+          </div>
+
+          <!-- Floating Glass Badge -->
+          <div class="hero-badge-pill">
+            <i class="fa-solid fa-fire-burner" style="color:var(--color-sunset-orange);"></i>
+            <span>Season 2026 Expeditions</span>
+          </div>
+
+          <!-- Floating Interactive Glass Card -->
+          <div class="hero-floating-glass-card">
+            <div class="glass-card-header">
+              <span class="glass-card-tag">Current Field Note</span>
+              <span style="font-size:0.8rem; color:var(--color-sunset-orange);">★ 4.98</span>
+            </div>
+            <h4 class="glass-card-title">Nerano Lemon Spaghetti</h4>
+            <p class="glass-card-meta">Amalfi Coast, Italy • Hand-harvested Sfusato lemons & aged Provolone.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Spin Flavor Compass Interactive Banner -->
+      <div class="flavor-discovery-banner">
+        <div class="discovery-content">
+          <div class="discovery-text">
+            <h3>Hungry for Adventure? Spin the Flavor Compass</h3>
+            <p>Let destiny choose your next culinary destination and unmissable regional specialty.</p>
+          </div>
+          <button id="spinCompassBtn" class="compass-spin-btn">
+            <i class="fa-solid fa-dice"></i>
+            <span>Spin for Random Tasting</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Culinary Expeditions & Destinations (Filterable Grid)
+       ======================================================================== -->
+  <section class="section-padding destinations-section" id="destinations">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-tag">Curated Travel Guides</span>
+        <h2 class="section-title">Culinary <span class="highlight">Expeditions</span></h2>
+        <p class="section-desc">
+          Every destination is a living tapestry of culture, heritage chiles, secret spice souks, and generations-old family recipes.
+        </p>
+      </div>
+
+      <!-- Filter Pills -->
+      <div class="filter-bar-wrapper">
+        <button class="filter-pill active" data-filter="all">
+          <i class="fa-solid fa-globe"></i> All Expeditions
+        </button>
+        <button class="filter-pill" data-filter="asia">
+          <i class="fa-solid fa-bowl-rice"></i> Asia
+        </button>
+        <button class="filter-pill" data-filter="europe">
+          <i class="fa-solid fa-wine-glass"></i> Europe
+        </button>
+        <button class="filter-pill" data-filter="americas">
+          <i class="fa-solid fa-pepper-hot"></i> Americas
+        </button>
+        <button class="filter-pill" data-filter="street-food">
+          <i class="fa-solid fa-fire"></i> Street Food
+        </button>
+        <button class="filter-pill" data-filter="hidden-gems">
+          <i class="fa-solid fa-gem"></i> Hidden Gems
+        </button>
+      </div>
+
+      <!-- Destination Cards Grid (Populated via JS) -->
+      <div class="destinations-grid" id="destinationsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Interactive World Gastronomy Map
+       ======================================================================== -->
+  <section class="section-padding gastronomy-map-section" id="world-map">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-tag orange">Interactive Explorer</span>
+        <h2 class="section-title">The Global <span class="highlight">Flavor Map</span></h2>
+        <p class="section-desc">
+          Click any glowing culinary hotspot to reveal Dhanyashree's insider street alley, signature specialty, and tasting notes.
+        </p>
+      </div>
+
+      <div class="map-interactive-container">
+        <div class="map-svg-canvas">
+          <!-- Stylized World Map SVG Outlines -->
+          <svg class="world-silhouette" viewBox="0 0 1000 500" fill="currentColor">
+            <path d="M150,120 Q180,90 260,110 Q300,140 280,220 Q240,260 200,280 Q170,240 140,190 Z" />
+            <path d="M220,290 Q270,300 290,360 Q280,440 230,470 Q200,430 210,350 Z" />
+            <path d="M460,100 Q550,80 620,130 Q600,220 540,230 Q470,200 450,150 Z" />
+            <path d="M480,240 Q560,240 580,330 Q540,430 490,420 Q460,330 470,260 Z" />
+            <path d="M640,110 Q800,90 880,160 Q860,280 780,310 Q700,260 650,190 Z" />
+            <path d="M780,340 Q860,340 880,420 Q820,470 760,430 Z" />
+          </svg>
+
+          <!-- Interactive Pins -->
+          <div class="map-pin active" style="top: 40%; left: 82%;" data-dest-id="kyoto-japan">
+            <div class="pin-pulse"></div>
+            <span class="pin-label">🍵 Kyoto, Japan</span>
+          </div>
+
+          <div class="map-pin" style="top: 48%; left: 24%;" data-dest-id="oaxaca-mexico">
+            <div class="pin-pulse"></div>
+            <span class="pin-label">🌶️ Oaxaca, Mexico</span>
+          </div>
+
+          <div class="map-pin" style="top: 36%; left: 52%;" data-dest-id="amalfi-italy">
+            <div class="pin-pulse"></div>
+            <span class="pin-label">🍋 Amalfi, Italy</span>
+          </div>
+
+          <div class="map-pin" style="top: 50%; left: 78%;" data-dest-id="bangkok-thailand">
+            <div class="pin-pulse"></div>
+            <span class="pin-label">🍜 Bangkok, Thailand</span>
+          </div>
+
+          <div class="map-pin" style="top: 35%; left: 47%;" data-dest-id="san-sebastian-spain">
+            <div class="pin-pulse"></div>
+            <span class="pin-label">🍷 San Sebastián, Spain</span>
+          </div>
+
+          <div class="map-pin" style="top: 43%; left: 46%;" data-dest-id="marrakech-morocco">
+            <div class="pin-pulse"></div>
+            <span class="pin-label">🏺 Marrakech, Morocco</span>
+          </div>
+        </div>
+
+        <!-- Floating Info Box -->
+        <div class="map-info-popup" id="mapPopup">
+          <div class="popup-city" id="mapCity">Kyoto Kaiseki & Matcha Trails (Japan)</div>
+          <div class="popup-dish" id="mapDish">★ Signature: Seasonal Kaiseki & Uji Ceremonial Matcha</div>
+          <p class="popup-tip" id="mapTip">
+            Visit Otagi Nenbutsu-ji early, then slip into the 200-year-old soba parlor just down the mossy bamboo lane for hand-cut soba in hot duck dashi.
+          </p>
+          <button class="btn-pill btn-primary" onclick="openDestinationModal('kyoto-japan')">
+            Open Full Travelogue
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       The Recipe Vault & Flavor Alchemy (Interactive Scaler)
+       ======================================================================== -->
+  <section class="section-padding recipe-vault-section" id="recipe-vault">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-tag">From Field to Kitchen</span>
+        <h2 class="section-title">The Recipe <span class="highlight">Vault</span></h2>
+        <p class="section-desc">
+          Authentic dishes recreated from street vendors and home cooks around the world. Scale servings dynamically and check off ingredients as you prepare.
+        </p>
+      </div>
+
+      <!-- Recipe Cards Grid -->
+      <div class="recipe-cards-grid" id="recipeGrid"></div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Interactive Taste Persona Quiz Section
+       ======================================================================== -->
+  <section class="section-padding quiz-section" id="quiz">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-tag orange">Interactive Experience</span>
+        <h2 class="section-title" style="color:#ffffff;">What Flavor Destination <span class="highlight">Matches Your Soul?</span></h2>
+        <p class="section-desc" style="color:var(--color-text-light-muted);">
+          Answer 3 intuitive questions to calculate your personalized culinary travel persona.
+        </p>
+      </div>
+
+      <div class="quiz-container">
+        <div class="quiz-progress-bar-wrap">
+          <div class="quiz-progress-bar" id="quizProgressBar"></div>
+        </div>
+
+        <!-- Question Box Container -->
+        <div id="quizQuestionContainer"></div>
+
+        <!-- Quiz Result Box (Hidden by default) -->
+        <div id="quizResultContainer"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Taste Journal & Travel Stories
+       ======================================================================== -->
+  <section class="section-padding journal-section" id="journal">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-tag">Writings & Dispatches</span>
+        <h2 class="section-title">Taste <span class="highlight">Journal</span></h2>
+        <p class="section-desc">
+          Dispatches from the road, philosophical reflections on heirloom ingredients, and unwritten cultural etiquette.
+        </p>
+      </div>
+
+      <div class="journal-grid">
+        <!-- Story 1 -->
+        <article class="journal-card">
+          <div class="journal-cover">
+            <img src="https://images.unsplash.com/photo-1512838243191-0b1058732d2e?auto=format&fit=crop&w=800&q=80" alt="Oaxaca market cooking">
+          </div>
+          <div class="journal-body">
+            <div class="journal-meta">
+              <span><i class="fa-regular fa-clock"></i> 6 min read</span>
+              <span>•</span>
+              <span>October 2025</span>
+            </div>
+            <h3 class="journal-title">The Scent of Smoke: 48 Hours in Oaxaca’s Ancient Hearth Kitchens</h3>
+            <p class="journal-excerpt">
+              Deep in the Central Valleys of Oaxaca, I sat beside Doña Flor as her hands patted out heirloom criollo corn tortillas over glowing mesquite wood embers...
+            </p>
+            <a href="#destinations" class="view-guide-link">
+              Read Essay <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Story 2 -->
+        <article class="journal-card">
+          <div class="journal-cover">
+            <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80" alt="Tokyo ramen bar">
+          </div>
+          <div class="journal-body">
+            <div class="journal-meta">
+              <span><i class="fa-regular fa-clock"></i> 4 min read</span>
+              <span>•</span>
+              <span>December 2025</span>
+            </div>
+            <h3 class="journal-title">Midnight Ramen in Tokyo: Finding Solace Behind Noren Curtains</h3>
+            <p class="journal-excerpt">
+              It was 1:15 AM in Shinjuku. Rain washed neon reflections onto the asphalt. Tucked in a narrow alley was a six-seat counter simmering 36-hour tonkotsu broth...
+            </p>
+            <a href="#destinations" class="view-guide-link">
+              Read Essay <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Story 3 -->
+        <article class="journal-card">
+          <div class="journal-cover">
+            <img src="https://images.unsplash.com/photo-1515443961218-a51367888e4b?auto=format&fit=crop&w=800&q=80" alt="Basque Pintxos Bar">
+          </div>
+          <div class="journal-body">
+            <div class="journal-meta">
+              <span><i class="fa-regular fa-clock"></i> 5 min read</span>
+              <span>•</span>
+              <span>January 2026</span>
+            </div>
+            <h3 class="journal-title">The Art of the Basque Pintxo Crawl: Rules of the Bar Counter</h3>
+            <p class="journal-excerpt">
+              There is a rhythm to eating in San Sebastián: order one Gilda pintxo, sip aerated Txakoli wine, drop your paper napkin on the floor, and move to the next tavern...
+            </p>
+            <a href="#destinations" class="view-guide-link">
+              Read Essay <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       About Dhanyashree (Culinary Documentarian)
+       ======================================================================== -->
+  <section class="section-padding about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-portrait-wrap">
+          <div class="about-portrait-frame">
+            <img src="images/dhanyashree.png" alt="Dhanyashree - Computer Science Engineer & Culinary Documentarian" style="object-position: top center;">
+          </div>
+          <div class="about-experience-stamp">
+            <span class="stamp-num">CSE</span>
+            <span class="stamp-text">Tech & Travel Creator</span>
+          </div>
+        </div>
+
+        <div class="about-text-content">
+          <span class="badge-tag">Meet the Explorer</span>
+          <h2 class="section-title">Hi, I'm <span class="highlight">Dhanyashree</span>.</h2>
+          <p class="about-bio-text">
+            I am a Computer Science Engineer and passionate culinary travel documentarian on a mission to bridge technology, storytelling, and global food cultures.
+          </p>
+          <p class="about-bio-text">
+            Whether I'm writing modern code or documenting secret spice souks and ancestral recipes across the globe, my goal is simple: create immersive digital experiences that celebrate diverse cultures and inspiring culinary traditions.
+          </p>
+
+          <!-- Education Card -->
+          <div class="education-card" style="background: var(--color-cream-card); border: 1px solid var(--color-cream-border); border-left: 4px solid var(--color-sunset-orange); border-radius: var(--radius-sm); padding: 1.15rem 1.4rem; margin-bottom: 1.6rem; box-shadow: var(--shadow-sm);">
+            <div style="display:flex; align-items:center; gap:0.65rem; color:var(--color-forest-deep); font-weight:800; font-size:1.05rem; margin-bottom:0.35rem;">
+              <i class="fa-solid fa-graduation-cap" style="color:var(--color-sunset-orange); font-size:1.25rem;"></i>
+              <span>B.E. in Computer Science and Engineering</span>
+            </div>
+            <div style="font-size:0.92rem; color:var(--color-text-muted); font-weight:600; display:flex; align-items:center; gap:0.5rem;">
+              <i class="fa-solid fa-building-columns" style="color:var(--color-mint-dark);"></i>
+              <span>Adichunchanagiri Institute of Technology, Chikkamagaluru</span>
+            </div>
+          </div>
+
+          <div class="about-badges-row">
+            <div class="cred-badge">
+              <i class="fa-solid fa-code" style="color:var(--color-sunset-orange);"></i>
+              <span>Computer Science & Engineering</span>
+            </div>
+            <div class="cred-badge">
+              <i class="fa-solid fa-compass" style="color:var(--color-mint-dark);"></i>
+              <span>Culinary & Travel Documentarian</span>
+            </div>
+            <div class="cred-badge">
+              <i class="fa-solid fa-camera" style="color:var(--color-forest-primary);"></i>
+              <span>Digital Storyteller</span>
+            </div>
+          </div>
+
+          <div style="display:flex; gap:1rem; flex-wrap:wrap; align-items:center;">
+            <a href="#contact" class="btn btn-primary">
+              <i class="fa-solid fa-envelope"></i> Work With Dhanyashree
+            </a>
+            <a href="https://github.com/dhanyadhanuashree" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <i class="fa-brands fa-github"></i> GitHub Profile
+            </a>
+            <a href="https://www.linkedin.com/public-profile/settings/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+              <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Foodie Travel Toolkit / Essentials Grid -->
+      <div style="margin-top: 5.5rem;">
+        <div class="section-header" style="margin-bottom: 2.5rem;">
+          <span class="badge-tag">The Field Bag</span>
+          <h3 style="font-family:var(--font-heading); font-size:2rem; color:var(--color-forest-deep);">
+            Dhanyashree’s Culinary Travel Toolkit
+          </h3>
+        </div>
+
+        <div class="toolkit-grid">
+          <div class="toolkit-card">
+            <div class="toolkit-icon"><i class="fa-solid fa-mug-hot"></i></div>
+            <h4>Portable Hand Espresso</h4>
+            <p>Nanopresso for dawn espresso shots in mountain villages and overnight sleeper trains.</p>
+          </div>
+          <div class="toolkit-card">
+            <div class="toolkit-icon"><i class="fa-solid fa-mortar-pestle"></i></div>
+            <h4>Travel Spice Vial Kit</h4>
+            <p>12 custom airtight brass vials filled with Maldon flake salt, Sichuan peppercorns & Canela.</p>
+          </div>
+          <div class="toolkit-card">
+            <div class="toolkit-icon"><i class="fa-solid fa-camera"></i></div>
+            <h4>Low-Light Lens Kit</h4>
+            <p>35mm f/1.4 prime lens to capture steam and candlelight without intrusive flash photography.</p>
+          </div>
+          <div class="toolkit-card">
+            <div class="toolkit-icon"><i class="fa-solid fa-book-bookmark"></i></div>
+            <h4>Handmade Tasting Journal</h4>
+            <p>Acid-free rag paper notebook where every street vendor's recommendation is stamped in ink.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Contact / Custom Tasting Tour Booking
+       ======================================================================== -->
+  <section class="section-padding contact-section" id="contact">
+    <div class="container">
+      <div class="contact-card-box">
+        <div class="contact-info-col">
+          <span class="badge-tag orange" style="background:rgba(255,107,53,0.2); color:#fff; border-color:rgba(255,107,53,0.5);">
+            Let's Collaborate
+          </span>
+          <h2>Plan a Private Tasting Tour or Culinary Story</h2>
+          <p>
+            Whether you want custom bespoke culinary itineraries, culinary travel journalism, restaurant consulting, or brand partnerships, let's create something unforgettable together.
+          </p>
+
+          <ul class="contact-details-list">
+            <li>
+              <div class="icon-circle"><i class="fa-solid fa-envelope"></i></div>
+              <span><a href="mailto:dhanyadhanyashree428@gmail.com" style="color:#ffffff; text-decoration:underline;">dhanyadhanyashree428@gmail.com</a></span>
+            </li>
+            <li>
+              <div class="icon-circle"><i class="fa-brands fa-github"></i></div>
+              <span><a href="https://github.com/dhanyadhanuashree" target="_blank" rel="noopener noreferrer" style="color:#ffffff; text-decoration:underline;">github.com/dhanyadhanuashree</a></span>
+            </li>
+            <li>
+              <div class="icon-circle"><i class="fa-brands fa-linkedin"></i></div>
+              <span><a href="https://www.linkedin.com/public-profile/settings/" target="_blank" rel="noopener noreferrer" style="color:#ffffff; text-decoration:underline;">LinkedIn Profile</a></span>
+            </li>
+            <li>
+              <div class="icon-circle"><i class="fa-solid fa-location-dot"></i></div>
+              <span>Currently in: Kyoto, Japan (Winter Fieldwork)</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-form-col">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="userName">Your Full Name</label>
+              <input type="text" id="userName" class="form-input" placeholder="e.g. Elena Rostova" required>
+            </div>
+
+            <div class="form-group">
+              <label for="userEmail">Email Address</label>
+              <input type="email" id="userEmail" class="form-input" placeholder="elena@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="tourType">Inquiry Type</label>
+              <select id="tourType" class="form-select">
+                <option value="itinerary">Custom Bespoke Food Itinerary Planning</option>
+                <option value="private-tour">Private Guided Gastro Expedition</option>
+                <option value="editorial">Editorial / Writing & Photography Assignment</option>
+                <option value="sponsorship">Brand Partnership / Brand Ambassadorship</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="userMsg">Tell me about your dream destination or project</label>
+              <textarea id="userMsg" class="form-textarea" placeholder="Which countries are calling you? What flavors are you most eager to explore?" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;">
+              <span>Send Inquiry to Dhanyashree</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Footer
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <div class="brand-logo" style="color:#ffffff; margin-bottom:1rem;">
+            <div class="logo-badge">
+              <i class="fa-solid fa-pepper-hot"></i>
+            </div>
+            <span>TasteBud <span class="highlight">Travels</span></span>
+          </div>
+          <p>
+            An award-winning culinary travel documentarian portfolio by Dhanyashree chronicling the world's most authentic dishes, heritage cooks, and food cultures.
+          </p>
+          <div class="footer-socials">
+            <a href="https://github.com/dhanyadhanuashree" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/public-profile/settings/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:dhanyadhanyashree428@gmail.com" class="social-icon-btn" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Expeditions</h4>
+          <ul class="footer-links">
+            <li><a href="#destinations">Kyoto Kaiseki Guide</a></li>
+            <li><a href="#destinations">Oaxaca 7 Moles Journey</a></li>
+            <li><a href="#destinations">Amalfi Coast Lemon Trails</a></li>
+            <li><a href="#destinations">Bangkok Midnight Markets</a></li>
+            <li><a href="#destinations">Basque Country Pintxos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="#world-map">Interactive Map</a></li>
+            <li><a href="#recipe-vault">The Recipe Vault</a></li>
+            <li><a href="#quiz">Flavor Persona Quiz</a></li>
+            <li><a href="#journal">Taste Journal</a></li>
+            <li><a href="#about">About Dhanyashree</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-newsletter">
+          <h4>The Secret Table</h4>
+          <p>Join 18,000+ passionate food travelers. Receive Dhanyashree's free PDF: <em>"50 Secret Street Food Spots Around the World"</em>.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" class="newsletter-input" placeholder="Your email..." required>
+            <button type="submit" class="btn btn-primary btn-pill">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 TasteBud Travels by Dhanyashree. All Rights Reserved. Crafted for food lovers worldwide.</div>
+        <div>
+          <a href="#hero" style="color:var(--color-mint-light); font-weight:700;">Back to Top ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       Dynamic Detail Modal Container (Expeditions & Recipe Step-by-Step)
+       ======================================================================== -->
+  <div class="modal-backdrop" id="destinationModal">
+    <div class="modal-window">
+      <button class="modal-close-btn" onclick="closeDestinationModal()" aria-label="Close dialog">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div id="modalDynamicContent"></div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
